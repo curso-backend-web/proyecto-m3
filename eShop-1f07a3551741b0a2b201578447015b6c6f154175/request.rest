@@ -1,0 +1,74 @@
+##### Register Users
+
+POST  http://localhost:3000/api/eshop/user/register
+Content-Type: application/json
+
+{
+    "name":"oscar",
+    "password":"0000",
+    "adress":"plaza c",
+    "phone":"+34 000000000",
+    "role": "admin"
+}
+
+
+
+##### Login Users
+
+POST http://localhost:3000/api/eshop/auth/login/
+Content-Type: application/json
+
+{
+    "name":"oscar",
+    "password":"0000"
+    
+}
+
+
+
+##### Delete User by userId
+
+DELETE http://localhost:3000/api/eshop/user/e2ad63c3-b108-4a3e-8aa2-8cf084d33a21
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3NjYXIiLCJpYXQiOjE2MzkzNTg2MzAsImV4cCI6MTYzOTQ0NTAzMH0.yklr2tatK5_JTPX-lUVrJfLtxw14e5XIWCq93qHxVyw
+
+
+
+
+##### Update datas of User
+
+PATCH http://localhost:3000/api/eshop/user/194789f3-dbd2-4fa2-853b-4eaf39c5345e
+Content-Type: application/json
+
+{
+    
+    "adress":"calle 455",
+    "phone": "+34 932455543",
+    "role": "cliente"
+        
+}
+
+
+
+##### List all users
+
+GET http://localhost:3000/api/eshop/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3NjYXIiLCJpYXQiOjE2MzkzNTk2NjYsImV4cCI6MTYzOTQ0NjA2Nn0.0q6q3kDadl7uexGoKqgfEGwFXgxD7dA_bC0Knmi99zw
+Content-Type: application/json
+
+
+
+##### List one User by name
+
+GET http://localhost:3000/api/eshop/user/7777@mail.com
+Content-Type: application/json
+
+
+###### Show number of Users registers
+
+GET http://localhost:3000/api/eshop/user?limit=2
+Content-Type: application/json
+
+
+######
+
+
